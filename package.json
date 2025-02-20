@@ -1,0 +1,17 @@
+{
+  "name": "nsbe-101",
+  "version": "1.0.0",
+  "description": "## Overview   CampusPlace is a platform designed exclusively for **University Students** to buy and sell goods securely within their campus community. Inspired by Facebook Marketplace, it ensures that only verified UB students can participate, fostering a **trusted** and **safe** environment for peer-to-peer transactions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.2.0"
+  }
+}
