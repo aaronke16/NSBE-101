@@ -1,0 +1,28 @@
+.sideNav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sideNav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .sideNav button:hover {
+    background-color: #575757;
+  }
+  

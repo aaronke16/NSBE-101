@@ -1,9 +1,8 @@
 import React, { use, useState } from "react";
 import { Routes, Router, Link, Route } from "react-router";
 import "./Register.css"
-import Register from "./Register"
 
-const Login = () => {
+const ResetPassword = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [username, setUsername] = useState("");
@@ -41,40 +40,31 @@ const Login = () => {
         <div className="container">
             <div className="wrapper">
             <div className="title">
-                <span>Log In</span>
+                <span>Reset Password</span>
             </div>
-            <p className='title_para'>Log into your account.</p>
+            <p className='title_para'>Forgot password? Reset here.</p>
             <form form action="#" onSubmit={handleRegister} method="GET">
             <div className="row">
             <input
-                    type = "username"
-                    placeholder="Enter username"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                    required
-                    id="input-item"
-                />
-            </div>
-            <div className="row">
-                <input 
-                    type = "password"
-                    placeholder="Enter password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    type = "email"
+                    placeholder="Enter email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     required
                     id="input-item"
                 />
             </div>
             <div className="row-button">
-                <div className="signup-link"><Link to="/reset-password">Reset your password</Link></div>
-                <button className="register-button">Login</button>
+                <button className="register-button">Send login info!</button>
                 {errorMessage && <p className="message">{errorMessage}</p>}
-                <div className="signup-link"><Link to="./Register">Don't have an account? Click here to register!</Link></div>
+                <div className="signup-link"><Link to="/">Click here to return to login page</Link></div>
             </div>
             </form>
             </div>
         </div>
+
+        
     );
 };
 
-export default Login;
+export default ResetPassword;
